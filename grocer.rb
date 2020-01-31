@@ -65,18 +65,18 @@ end
 
 
 
-# def apply_clearance(cart)
-#   cart_index = 0
-#   while cart_index < cart.length do
-#     item = cart[cart_index]
-#     item_clearance = cart[cart_index][:clearance]
-#     if item_clearance
-#       item[:price] = item[:price] - (item[:price] * 0.20)
-#     end
-#     cart_index += 1
-#   end
-#   return cart
-# end
+def apply_clearance(cart)
+  cart_index = 0
+  while cart_index < cart.length do
+    item = cart[cart_index]
+    item_clearance = cart[cart_index][:clearance]
+    if item_clearance
+      item[:price] = item[:price] - (item[:price] * 0.20)
+    end
+    cart_index += 1
+  end
+  return cart
+end
 
 
 
