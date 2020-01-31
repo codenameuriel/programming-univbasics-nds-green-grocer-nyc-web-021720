@@ -89,15 +89,15 @@ def checkout(cart, coupons)
   total = 0
 
   cart_index = 0
-   while cart_index < applied_clearance_cart.length do
+  while cart_index < applied_clearance_cart.length do
     item = applied_clearance_cart[cart_index]
     total += (item[:price] * item[:count])
     cart_index += 1
-   end
+  end
    
-   if total > 100.00
+  if total > 100.00
     additional_discount = (total * 0.10)
     total -= additional_discount
-   end
-   return total
+  end
+  return total
 end
